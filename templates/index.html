@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obama, or not?</title>
+</head>
+<body>
+    <center>
+        <div style="width: 50%; text-align: center;">
+            <h1>Is Barack Obama in your picture?</h1>
+            <p>Why not let this Machine Learning algorithm check for him?</p>
+            <br /><br />
+            <div style="text-align: left;">
+                <form action="/submit" method="post" enctype=multipart/form-data>
+                    <label for="image">Upload your image here:</label><br />
+                    <input type="file" id="image" name="file"><br />
+                    <input type="submit" value="Check for Obama"><br />
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

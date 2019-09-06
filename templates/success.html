@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Here's the results.</title>
+</head>
+<body>
+    <center>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <h1>{{ message }}</h1>
+                    <br />
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <a href="{{ url_for('index') }}">Return</a>
+    </center>
+</body>
+</html>

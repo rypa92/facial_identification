@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nope, Couldn't find him ..</title>
+</head>
+<body>
+    <center>
+        <h1>Sorry, there seemed to be a problem with that picture.</h1>
+        <br />
+        Further Explanation:<br />
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <br />
+        <a href="{{ url_for('index') }}">Return</a>
+    </center>
+</body>
+</html>
